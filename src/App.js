@@ -78,16 +78,16 @@ function App() {
 
         <div className='options'>
           <div className={`option-item ${selectedoption === OVERVIEW_SMALL ? 'bold' : ''}`} onClick={() => setSelectedOption("overview")} >
-            <img src={Monitor} />Overview
+            <img src={Monitor} alt='' />Overview
           </div>
           <div className={`option-item ${selectedoption === ENVIRONMENT ? 'bold' : ''}`} onClick={() => setSelectedOption("environment")}>
-            <img src={Settings} />{ENVIRONMENT_VARIABLES}
+            <img src={Settings} alt=''/>{ENVIRONMENT_VARIABLES}
           </div>
           <div className={`option-item ${selectedoption === ALERT ? 'bold' : ''}`} onClick={() => setSelectedOption("alert")}>
-            <img src={Alert} />{ALERTS}
+            <img src={Alert} alt=''/>{ALERTS}
           </div>
           <div className={`option-item ${selectedoption === HISTORY ? 'bold' : ''}`} onClick={() => setSelectedOption("history")}>
-            <img src={HistoryIcon} />{EVENT_HISTORY}
+            <img src={HistoryIcon} alt=''/>{EVENT_HISTORY}
           </div>
         </div>
         {getSelectedOption()}

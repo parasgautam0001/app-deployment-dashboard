@@ -19,7 +19,7 @@ const Dropdown: React.FC<DropdownProps> = ({ defaultName, options, setApp }) => 
     <div className="dropdown">
       <div className="dropdown-toggle" onClick={toggleDropdown}>
         <div>{defaultName}</div>
-        <img src={DropOpen} className={`${isOpen ? 'open-icon' : ''}`} />
+        <img src={DropOpen} alt='' className={`${isOpen ? 'open-icon' : ''}`} />
       </div>
       <div className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
         {options.map((option, index) => {

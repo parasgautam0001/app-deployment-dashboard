@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Topbar/Topbar.css';
 import Dropdown from '../Dropdown/Dropdown.tsx';
 import { TopbarProps } from '../types/types.ts';
