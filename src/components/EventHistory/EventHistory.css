@@ -1,0 +1,94 @@
+.event-history {
+    width: 100%;
+    padding: 20px;
+    background: #FFF;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: baseline;
+    justify-content: space-between;
+    overflow: scroll;
+    max-height: 380px;
+}
+
+.events {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #595959;
+}
+
+.events-header {
+    color: #333333;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.events-status {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #F0FCF9;
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    color: #00B88C;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #00B88C;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+}
+
+.progress-status {
+    background: #FEF5E6;
+    color: #F39C12;
+    border: 1px solid #F39C12;
+}
+
+.failed-status {
+    background: #FEF4F2;
+    color: #E91F04;
+    border: 1px solid #E91F04;
+    width: 60px;
+}
+
+.deployed-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00B88C;
+}
+
+.progress-circle {
+    background: #F39C12;
+}
+
+.failed-circle {
+    background: #E91F04;
+}
+
+.event-header {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.events-item {
+    flex: 1;
+}
+
+.time-elapsed {
+    font-size: 12px;
+    color: #A5A5A5;
+}
+
+.view {
+    color: #6E27D5;
+    cursor: pointer;
+}
