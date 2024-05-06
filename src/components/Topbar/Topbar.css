@@ -1,0 +1,31 @@
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.applications {
+    font-size: 10px;
+    color: #595959;
+}
+
+.name-symbol {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFD07B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+}
