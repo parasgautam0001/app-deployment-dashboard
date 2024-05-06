@@ -1,0 +1,42 @@
+.env-container {
+    height: 360px;
+    background: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.env-header-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.env-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.main-key-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 40%;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+}
+
+.pairs {
+    max-height: 280px;
+    overflow: scroll;
+}
+
+.pointers {
+    cursor: pointer;
+}
