@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,85 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* new content */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #EBEBEB;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #37146B;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items.bottom {
+  margin-top: auto;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.name {
+  display: inline-block;
+  width: 0;
+  animation-name: to-right;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes to-right {
+  100% {
+    width: 90px;
+  }
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
