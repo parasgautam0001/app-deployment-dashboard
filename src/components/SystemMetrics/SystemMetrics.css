@@ -1,0 +1,32 @@
+.system-metrics {
+    width: 100%;
+    padding: 20px;
+    background: #FFFF;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+
+.toggle-item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.horizontal-line {
+    border-top: 1px solid #595959;
+    margin-top: 10px;
+  }
+
+.focused-line {
+    border-bottom: 2px solid #6E27D5;
+}
+
+.metrics-header {
+    font-size: 16px;
+    font-weight: 700;
+}
+  
