@@ -37,3 +37,7 @@ export const SYSTEM_METRICS = "System Metrics";
 export const CLICK_OR_DRAG = "Click or drag file(s) here to upload";
 
 export const UPLOAD_FILE = "Upload a .env file. It should not be greater than 5kb";
+
+export const CPU = "CPU";
+
+export const MEMORY = "Memory";
