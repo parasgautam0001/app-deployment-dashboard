@@ -20,6 +20,38 @@
     background: #FFFFFF;
     padding: 12px;
     margin: 20px 0px 20px 0px;
+    animation-name: card-opener;
+    animation-duration: 0.5s;
+}
+
+.service-info-closed {
+    background: #FFFFFF;
+    padding: 12px;
+    margin: 20px 0px 20px 0px;
+    overflow: hidden;
+    height: 20px;
+    animation-name: card-closer;
+    animation-duration: 0.5s;
+}
+
+@keyframes card-closer {
+    from {
+        height: 140px;
+    }
+
+    to {
+        height: 20px;
+    }
+}
+
+@keyframes card-opener {
+    from {
+        height: 20px;
+    }
+
+    to {
+        height: 140px;
+    }
 }
 
 .service-header {
@@ -47,6 +79,7 @@
 
 .rotate {
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
 .last-updated {

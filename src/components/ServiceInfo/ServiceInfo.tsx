@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ServiceInfo.css';
 import Tick from '../../assets/Tick.svg';
 import DropOpen from '../../assets/DropOpen.svg';
@@ -7,12 +7,13 @@ import { ServiceInfoProps } from '../types/types.ts';
 import { CURRENT_VERSION, DEPLOY, DESIRED_VERSION, IN_SYNC, LAST_UPDATED, SERVICE_INFO } from '../constants/stringConstants.ts';
 
 const ServiceInfo: React.FC<ServiceInfoProps> = ({ application }) => {
+    const [isCardOpen, setIsCardOpen] = useState(true);
 
     return (
-        <div className='service-info'>
+        <div className={`${isCardOpen ? 'service-info' : 'service-info-closed'}`}>
             <div className='heading'>
                 <div className='service-header'>{SERVICE_INFO}</div>
-                <img className='rotate' src={DropOpen} alt='' />
+                <img className='rotate' src={DropOpen} alt='' onClick={() => setIsCardOpen(ps => !ps)} />
             </div>
 
             <div className='box-container'>
