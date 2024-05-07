@@ -83,3 +83,8 @@ export interface FileUploadProps {
     closeUpload: () => void;
     env: Array<any>;
 };
+
+export interface NavbarProps {
+    selectedMenu: string;
+    setSelectedMenu: (val: string) => void;
+}

@@ -41,3 +41,5 @@ export const UPLOAD_FILE = "Upload a .env file. It should not be greater than 5k
 export const CPU = "CPU";
 
 export const MEMORY = "Memory";
+
+export const APPLICATION = "Applications";
