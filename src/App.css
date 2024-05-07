@@ -169,3 +169,12 @@ body {
     align-items: center;
 }
 
+.coming-soon {
+  background: #FFF;
+  height: 200px;
+  margin: 40px;
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+

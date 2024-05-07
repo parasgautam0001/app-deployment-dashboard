@@ -11,9 +11,14 @@ const FileUpload: React.FC<FileUploadProps> = ({ addEnvKeys, closeUpload, env })
     const [errorMessage, setErrorMessage] = useState<string>('');
 
     const removePair = (keyToRemove: string) => {
-        console.log("remmm", keyToRemove);
         const newState = envContent.filter(item => item.key !== keyToRemove);
         setEnvContent(newState);
+    };
+
+    const handleInputChange = (index: number, keyOrValue: string, newValue: string) => {
+        const updatedContent = [...envContent];
+        updatedContent[index][keyOrValue] = newValue;
+        setEnvContent(updatedContent);
     };
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -77,19 +82,29 @@ const FileUpload: React.FC<FileUploadProps> = ({ addEnvKeys, closeUpload, env })
                     />
                 </label>
                     <div className='upload-sub-heading'>{UPLOAD_FILE}</div></> :
-                    <div className='layer-inputs'>{envContent.map((content) => {
-                        return <div className='inputs'>
-                            <div className='key-input-container'>
-                                <label>Name</label>
-                                <input className='key-input' value={content.key} />
+                    <div className='layer-inputs'>
+                        {envContent.map((content, index) => (
+                            <div className='inputs' key={index}>
+                                <div className='key-input-container'>
+                                    <label>Name</label>
+                                    <input
+                                        className='key-input'
+                                        value={content.key}
+                                        onChange={(e) => handleInputChange(index, 'key', e.target.value)}
+                                    />
+                                </div>
+                                <div className='key-input-container'>
+                                    <label>Value</label>
+                                    <input
+                                        className='key-input'
+                                        value={content.value}
+                                        onChange={(e) => handleInputChange(index, 'value', e.target.value)}
+                                    />
+                                </div>
+                                <img src={Delete} alt='' onClick={() => removePair(content.key)} />
                             </div>
-                            <div className='key-input-container'>
-                                <label>Value</label>
-                                <input className='key-input' value={content.value} />
-                            </div>
-                            <img src={Delete} alt='' onClick={() => removePair(content.key)} />
-                        </div>
-                    })}</div>
+                        ))}
+                    </div>
                 }
                 <div className='buttons'>
                     <button onClick={closeUpload} className='cancel-button'>Cancel</button>

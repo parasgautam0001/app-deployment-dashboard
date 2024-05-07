@@ -37,9 +37,9 @@ function App() {
       case 'environment':
         return <Environment />;
       case 'alert':
-        return <div>{ALERTS_COMING_SOON}</div>;
+        return <div className='coming-soon'>{ALERTS_COMING_SOON}</div>;
       case 'history':
-        return <div>{EVENTS_COMING_SOON}</div>;
+        return <div className='coming-soon'>{EVENTS_COMING_SOON}</div>;
       default:
         break;
     }
